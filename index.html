@@ -34,7 +34,7 @@
 	}).addTo(mymap);
 
 L.timezones.bindPopup(function (layer) {
-    return new Date().toLocaleString("en-GB", {timeZone:layer.feature.properties.tz_name1st, timeZoneName:"short"});   //.time_zone
+    return L.Browser.ie? layer.feature.properties.time_zone : new Date().toLocaleString("en-GB", {timeZone:layer.feature.properties.tz_name1st, timeZoneName:"short"});
 }).addTo(mymap);
 
 </script>
