@@ -27,3 +27,5 @@ L.timezones.bindPopup(function (layer) {
     return new Date().toLocaleString("en-GB", {timeZone:layer.feature.properties.tz_name1st, timeZoneName:"short"})
 }).addTo(map);
 ```
+
+This project is licensed under the terms of the MIT license.
